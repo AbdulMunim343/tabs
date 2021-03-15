@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <style> 
+body{
+background-image: url("images/bg.png");
+font-family:sans-serif;
+overflow-x: hidden;
+}
+
+* { 
+box-sizing: border-box; 
+} 
+
+#tabsDiv{
+
+}
+#tabsDiv .ulClass { 
+	height: 550px !important;
+
+padding: 0px 5px; 
+} 
+
+.ulClass li { 
+width: 20%; 
+margin-bottom:5px ;
+} 
+
+.ulClass button { 
+float: left; 
+border: none;
+outline: none;
+background-color: #ff0000; 
+} 
+
+/* Button to open the content */
+.ulClass button { 
+display: block; 
+background-color: inherit; 
+color: white;
+outline:none; 
+height: 40px;
+width: 100%; 
+text-align: left; 
+cursor: pointer;
+border-radius: 5px;
+
+} 
+
+/* Button styling on mouse hover */
+.ulClass button:hover { 
+background-color: #ff0000;
+font-weight: bold;  
+
+} 
+
+.ulClass button.active { 
+background-color: #ff0000;
+font-weight: bold;  
+} 
+
+/* Content for tabs*/
+.contentClass { 
+display: none;
+position: absolute;
+right: 0;
+padding: 0px 0px 0px 61px;
+width: 79%;
+height: 550px;
+border-style: none;
+background-color: #e9efdf;
+} 
+
+.ulClass{
+position: relative;
+padding: 0px 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+/*content styling*/
+
+
+.mainhd{
+color: white;
+font-size: 28px;
+font-weight:500;
+margin-bottom: 25px;
+}
+
+.mainContainer{
+padding:20px 20px 20px 70px;
+transform: translateY(10%);
+
+}
+
+.linkClass{
+line-height: 1.3;
+font-size: 13px;
+}
+
+.contentClass p{
+	font-size: 16px;
+}
+
+.heding span{
+color: #1f4e79;
+font-size: 16px;
+font-weight: bold;
+}
+
+.heding .li{
+list-style:none;
+padding-left: 20px;
+font-size: 12px;
+
+}
+
+.Flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 550px;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.pd0{
+	padding: 0px !important;
+}
+
+.explor{
+	outline: none;
+	border: none;
+	background: black;
+	padding: 10px;
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	width: auto;
+	width: 70%;
+	cursor: pointer;
+}
+
+.explor2{
+	outline: none;
+	border: none;
+	background: black;
+	padding: 10px;
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	width: auto;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+
+
+.c1 span{
+	color: #1f4e79;
+font-size: 16px;
+font-weight: bold;
+}
+
+
+.c1 p{
+font-size: 12px;
+padding-right: 40% ;
+
+}
+
+.c2 span{
+	color: #1f4e79;
+font-size: 16px;
+font-weight: bold;
+}
+
+
+.c2 li{
+font-size: 12px;
+}
+
+.c2 ul{
+	padding-left: 20px;
+}
+
+
+#practice .pictur{
+position: absolute;
+right: 0;
+top: -6%;
+}
+
+.fist p{
+	font-size: 12px;
+}
+
+
+.hdli{
+	color: #1f4e79;
+font-size: 13px;
+font-weight: bold;
+}
+
+.hdli2{
+	color: #1f4e79;
+font-size: 16px;
+font-weight: bold;
+}
+
+
+@media (max-width: 360px){
+.contentClass {
+	padding: 0px;
+	height: auto;
+	width: 100%;
+}
+
+.mainContainer{
+padding:0;
+transform: translateY(0);
+
+}
+
+.Flex{
+	height:auto;
+}
+}
+
+
+    </style> 
+    
+<div>
+
+<div class="mainContainer">
+
+	<h2 class="mainhd"> 
+		Enterprise Infrastructure Support & Services 
+
+	</h2> 
+
+	<div id="tabsDiv"> 
+	
+		<div id="interview" class="contentClass"> 
+			<div class="row">
+			<div class="col-md-8 Flex">
+				<h4>Enterprise Application Software Solutions</h4>
+				<p>Enterprise package applications, database and technology<br>administration and custom applications support.</p>
+
+				<ul>
+					<li class="heding">
+						<span> Middleware & Database</span>
+						<li style="list-style:none;
+						padding-left: 20px;
+						font-size: 12px;
+						font-weight: bold">MRP enterprise applications and middleware services manage the complete service lifecycle management for middleware and database products.
+						</li>
+					</li>
+
+					<li class="heding">
+						<span> Enterprise Resource Planning</span>
+						<li style="list-style:none;
+						padding-left: 20px;
+						font-size: 12px;
+						font-weight: bold">MRP offers consulting, implementation and application maintenance support and development services for Oracle E-Business Suite.
+
+						</li>
+					</li>
+
+					<li class="heding">
+						<span> Identity & Access Management</span>
+						<li style="list-style:none;
+						padding-left: 20px;
+						font-size: 12px;
+						font-weight: bold">MRP offers Identity & Access Management implementation and support services. MRP’s expertise covers the entire technology stack of Identity and Access Management solutions.
+
+						</li>
+					</li>
+
+					<li class="heding">
+						<span>Custom Software Development</span>
+						<li style="list-style:none;
+						padding-left: 20px;
+						font-size: 12px;
+						font-weight: bold">MRP has expertise in custom development of web, mobile  and Standalone applications designed and development to meet enterprise specific requirements and business needs.
+
+						</li>
+					</li>
+
+					<li class="heding">
+						<span> Middleware & Database</span>
+						<li style="list-style:none;
+						padding-left: 20px;
+						font-size: 12px;
+						font-weight: bold">MRP enterprise applications and middleware services manage the complete service lifecycle management for middleware and database products.
+						</li>
+					</li>
+				</ul>
+				<button class="explor">
+					Explore Enterprise Application Software Solutions
+
+				</button>
+			</div>
+			<div class="col-md-4">
+				<img src="images/enter.png" alt="" class="enter">
+			</div>
+			</div>
+		</div> 
+
+		<div id="practice" class="contentClass"> 
+			<div class="row">
+				<div class="col-md-12 Flex">
+					<h4>Cloud Application Development & Solutions</h4>
+					<div class="c1">
+						<span>Cloud Transformation</span>
+						<p>MRP’s certified cloud consultants team will assist you to identify right approach to integrate a cloud strategy into your general business strategy.We offer professional consulting services on migrating your business to the cloud immaculately and increasing the number of cloud services used across your organization toaccelerate your business operations.
+						</p>
+					</div>
+
+					<div class="c2">
+						<span>Cloud System Management</span>
+					
+					<ul>
+						<li>Setting up your cloud-based IT infrastructure.</li>
+						<li>Designing, deploying and optimizing cloud services as per business needs.</li>
+						<li>Pro-active monitoring of your cloud-based IT infrastructure for smooth business operations.</li>
+						<li>Setting up your cloud-based IT infrastructure.</li>
+						<li>Providing you with consolidated billing and utilization reports of cloud infrastructure.</li>
+					</ul>
+					
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="c2">
+								<span>Oracle Cloud Services</span>
+							
+							<ul>
+								<li>Internet of Things Applications (IoT)</li>
+								<li>SaaS Analytics</li>
+								<li>Industry Solutions (Communications, </li>
+								<li>Financial Services, Hospitality, Utilities)</li>
+								<li>Block-Chain Cloud Service</li>
+								<li>Blockchain Application</li>
+							</ul>
+							
+							</div>
+						</div>
+		
+						<div class="col-md-4">
+							<div class="c2">
+								<span>AWS Cloud Services</span>
+							
+							<ul>
+								<li>AWS cloud security</li>
+								<li>DevOps</li>
+								<li>Platform services</li>
+								<li>Infrastructure Management Services</li>
+								<li>Amazon Data Lake</li>
+								<li>Amazon Analytical services</li> 
+							</ul>
+							
+							</div>
+						</div>
+		
+						<div class="col-md-4">
+							<div class="c2">
+								<span>Microsoft Azure</span>
+							
+							<ul>
+								<li>SQL & DevOps</li>
+								<li>Active Directory</li>
+								<li>API Management/li>
+								<li>Backup & Site Recovery</li>
+								<li>Analysis & App Services</li>
+								<li>Mobile Apps</li>
+								<li>VMware Solution</li>
+								<li>Linux/Virtual Machines</li>
+							</ul>
+							
+							</div>
+						</div>
+					<div class="pictur">
+						<img src="images/Picture1.png" alt="" >
+					</div>
+						<button class="explor2">
+							Explore Cloud Application Development & Solutions
+						</button>
+					</div>
+	
+				
+				</div>
+
+				
+
+			</div>
+
+			
+
+
+					
+		</div> 
+
+		<div id="python" class="contentClass"> 
+			<div class="row">
+				<div class="col-md-12 Flex">
+					<div class="fist">
+						<h4>Business Intelligence and Data Warehousing</h4>
+						<p>In today’s world of technology, organizations prosper by monitoring their operations using Business Intelligence and Analytics. Identifying the trends, knowing hidden patterns support leaders in making fact driven decisions, which ultimately impacts the bottom line. We as “MRP Private Limited” are expert in the field of Business Intelligence Analytics and have proven experience in answering tough questions using your own datasets. Our strategy is to facilitate customers in identifying key performance indicators and build dashboards around it that are easy to follow that with-in the glimpse of seconds, summarizes the business area that needs attention. Our aim is to provide a monitoring aided BI solution that allows organizations to act proactively in case of deviation and to improve in achieving targets.</p>
+						<p>Our expertise lies in deep understanding of technical development of ETL to move data to data warehouse for the purpose of visual Analytics. Our consultants possess extraordinary skill on Oracle and Microsoft database and at the same time understands the challenges of Business Intelligence tools like:</p>
+					
+						<div class="row">
+							<div class="col-md-6">
+								<ul style="margin-bottom: 20px;">
+								<li class="hdli">Oracle Business Intelligence and Publisher</li>
+								<li class="hdli">Microsoft Power BI</li>
+								<li class="hdli">Tableau </li>
+								<li class="hdli">Tibco Spotfire</li>
+								</ul>
+
+								<div>
+									<button class="explor2">
+										Explore Business Intelligence
+									</button>
+								</div>
+								
+								<button class="explor2">
+									Explore Data Warehousing
+								</button>
+							</div>
+							<div class="col-md-6">
+								<img src="images/Picture2.png" alt="">
+							</div>
+						</div>
+					
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div> 
+
+		<div id="algorithms" class="contentClass"> 
+			<div class="row">
+				<div class="col-md-12 Flex">
+					<div class="fist">
+						<h4>Business Intelligence and Data Warehousing</h4>
+						<p>IMRP Elite Business Continuity Solution is a comprehensive managed technology service that includes enhancements for business continuity and disaster recovery for businesses that require maximum uptime. MRP Elite Business Continuity Solution assures the continuity of critical business systems using image-based backup and the hybrid cloud model. This dramatically reduces downtime by saving backups both locally and in the cloud and gives users greater protection for their systems and data through advanced bandwidth management, local restorations, and full cloud data copies.
+						</p>
+					
+						<div class="row">
+							
+							<div class="col-md-6 text-center">
+								<img src="images/Picture3.png" alt="" style="width: 300px; height: 300px;">
+
+								<button class="explor2">
+									Explore Business Continuity Solutions
+								</button>
+							</div>
+
+							<div class="col-md-6">
+								<ul style="margin-bottom: 10px;">
+								<li class="hdli2" style="margin-top: 15px;">
+									Oracle Disaster Recovery
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Host based Replication solution</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Volume Mirroring</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Oracle RAC</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Oracle Weblogic Clustering</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Oracle Data guard</li>
+								</li>
+
+							
+
+								<li class="hdli2" style="margin-top: 15px;">
+									Symantec Solutions
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">NetBackup implementation and support services</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Backup Exec implementation and support services</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Data Insight support services</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Enterprise Vault implementation services</li>
+								</li>
+
+								
+								<li class="hdli2" style="margin-top: 15px;">
+									Veritas Backup & Recovery
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">Backup Exec</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">NetBackup</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">NetBackup Cloud Protection</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">NetBackup Appliances</li>
+									<li style="font-size: 12px !important; color: black !important; padding-left: 20px !important;list-style: none !important;">SaaS backup</li>
+								</li>
+								
+								</ul>
+
+								
+							</div>
+							
+						</div>
+					
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div>
+		
+		<div id="orecalapp" class="contentClass"> 
+			<div class="row">
+				<div class="col-md-12 Flex">
+					<div class="fist">
+						<h4>Oracle Applications - Support and Maintenance</h4>
+						<p>Enterprise IT landscape has become diverse and complex as technology is looked upon as business enabler. Oracle plays a pivotal role by supporting various business applications with its database and other technology solutions. Maintaining this vast technology stack is cumbersome for enterprises. MRP Elite partake responsibility of maintaining and supporting Oracle application and solutions through its maintenance and support services.
+
+						</p>
+					
+						<div class="row">
+							
+							<div class="col-md-6 text-center">
+								<img src="images/Picture4.png" alt="" style="width: 350px; height: 350px;">
+
+								
+							</div>
+
+							<div class="col-md-6">
+								<ul style="margin-top: 20%;">
+									<li class="hdli" style="margin-bottom: 10px;">Functional Implementation</li>
+									<li class="hdli" style="margin-bottom: 10px;">Cloning</li>
+									<li class="hdli" style="margin-bottom: 10px;">MAA and HA Architecture Design</li>
+									<li class="hdli" style="margin-bottom: 10px;">Cloning, Backup and Recovery</li>
+									<li class="hdli" style="margin-bottom: 10px;">Patching and Application Health Check</li>
+									<li class="hdli" style="margin-bottom: 10px;">Technical and Functional Upgrade</li>
+									<li class="hdli" style="margin-bottom: 10px;">Porting solution from On Premise to Oracle Cloud</li>
+									<li class="hdli" style="margin-bottom: 10px;">SLA and Managed Operations Services</li>
+									</ul>
+							</div>
+
+							<button class="explor2">
+								Explore Oracle Applications - Support and Maintenance
+							</button>
+							
+						</div>
+					
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div>
+
+		<div id="utilities" class="contentClass"> 
+			<div class="row">
+				<div class="col-md-12 Flex">
+					<div class="fist">
+						<h4>Utilities Platform</h4>
+						<p>Innovation will be at the heart of customer value for the utility of the future and MRP is dedicated to collaborating with our clients to strive for just that.</p>
+					
+						<div class="row">
+							<div class="col-md-6">
+								
+								<p>Many utilities companies struggle with inefficient manual processes and reporting constraints while regulators demand efficiency and lower operating costs. MRP, working with utilities companies around the world, has developed unique Oracle based solutions to address these industry challenges. We have developed solutions to help utilities companies introduce new capabilities that drive business outcomes through our services:</p>
+								<ul style="padding-left: 20px;">
+									<li class="hdli" style="list-style: none;">- Aligns Technology Solutions with business objectives</li>
+									<li class="hdli" style="list-style: none;">- System Implementations</li>
+									<li class="hdli" style="list-style: none;">- System Integration</li>
+									<li class="hdli" style="list-style: none;">- Solution Architecting</li>
+									<li class="hdli" style="list-style: none;">- Oracle Utilities Accelerators</li>
+									<li class="hdli" style="list-style: none;">- Quality Assurance </li>
+									<li class="hdli" style="list-style: none;">- Strategic Optimization of existing applications</li>
+									<li class="hdli" style="list-style: none;">- Trainings</li>
+									</ul>
+
+									<button class="explor2">
+										Explore Oracle Applications - Support and Maintenance
+									</button>
+							</div>
+
+							<div class="col-md-6 text-center">
+								<img src="images/Picture5.png" alt="" style="width: 350px; height: 350px;">
+							</div>
+
+							
+							
+						</div>
+					
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div>
+
+		<div id="globle" class="contentClass"> 
+			<div class="row">
+				<div class="col-md-12 Flex">
+					<div class="fist">
+						<h4>SLA Based – Global IT Infrastructure Maintenance Support</h4>
+						<p>We are driving innovation in third-party IT maintenance – promoting world-class,  cost-effective replacement solutions. We are committed to offering seamless and flexible service to keep pace with your IT infrastructure maintenance needs worldwide.  That’s what we call IT Life Services.</p>
+					
+						<div class="row">
+							
+							
+							<div class="col-md-6 text-center">
+								<img src="images/Picture6.png" alt="" style="width: 300px; height: 300px;">
+							
+								<button class="explor2">
+									Explore Maintenance Support
+								</button>
+							</div>
+							
+							<div class="col-md-6">
+								<span style="font-size: 14px; color:#1f4e79; font-weight: bold;">Workplace:</span>
+								<p style="font-size: 12px;">End to end delivery solution for the complete workplace environment</p>
+
+								<span style="font-size: 14px; color:#1f4e79; font-weight: bold;">Data Centre & Network:</span>
+								<p style="font-size: 12px;">On time deployment and operational availability for server, storage and network infrastructure guaranteed worldwide</p>
+
+								<span style="font-size: 14px; color:#1f4e79; font-weight: bold;">Service Desk:</span>
+								<p style="font-size: 12px;">Nearshore and offshore remote support</p>
+								
+								
+								<ul>
+									<li class="hdli">Worldwide Coverage</li>
+									<li class="hdli">Service Level Agreement</li>
+									<li class="hdli">Multi Vendor Support</li>
+									<li class="hdli">Spare Parts</li>
+									<li class="hdli">Single Point of Contact</li>
+									<li class="hdli">Recycle - Dispose</li>
+									<li class="hdli">Secure Data Disposal</li>
+									<li class="hdli">Removal & Relocation</li>
+								</ul>
+
+									
+							</div>
+
+
+							
+							
+						</div>
+					
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div>
+
+		<div id="tech" class="contentClass"> 
+			<div class="row">
+				<div class="col-md-12 Flex">
+					<div class="fist">
+						<h4>Specialized Technologies</h4>
+						<p>We offer IT consulting services that will help you improve your software architecture, create a tech-driven digital strategy, and improve operations by optimizing your software portfolio. Our software engineers will finish your digital transformation journey through careful planning and effective execution of the outlined IT strategy.
+						</p>
+					
+						<div class="row">
+							<div class="col-md-8">
+								<span style="font-size: 14px; font-weight: bold; margin-top: 20px; display: block;">Set of services solutions and platforms</span>
+							<div class="row">
+								<div class="col-md-6">
+									<ul style="">
+										<li class="hdli" >Platform Management Services</li>
+										<li class="hdli" >Utilities Industry Solutions</li>
+										<li class="hdli" >Tableau</li>
+										<li class="hdli" >Power BI</li>
+										<li class="hdli" >OBIEE</li>
+										<li class="hdli" >Qlikview</li>
+										<li class="hdli" >Identity and Access Management solution</li>
+										
+									</ul>
+								</div>
+
+								<div class="col-md-6">
+									<ul style="">
+										<li class="hdli" >SSIS</li>
+										<li class="hdli" >SSRS</li>
+										<li class="hdli" >Oracle Application Testing Suite</li>
+										<li class="hdli" >Real User Insight</li>
+										<li class="hdli" >Oracle Cloud CX</li>
+										<li class="hdli" >Mobile Application Development</li>
+										<li class="hdli" >Office 365</li>
+										
+									</ul>
+								</div>
+							</div>
+							<button class="explor2">
+								Explore Specialized Technologies
+							</button>	
+							</div>
+
+							<div class="col-md-4 text-center">
+								<img src="images/Picture7.png" alt="">
+							
+							</div>
+
+
+							
+							
+						</div>
+					
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div>
+	
+		
+		<ul class="ulClass"> 
+			<li style="list-style-type:none;"> 
+				<button class="linkClass" onclick= 
+					"displayContent(event, 'interview')"> 
+					Enterprise Application<br>
+					Software Solutions
+				</button> 
+			</li> 
+			
+			<li style="list-style-type:none;"> 
+				<button class="linkClass" onclick= 
+					"displayContent(event, 'practice')"> 
+					Cloud Apps<br>
+					Development & Solutions
+
+				</button> 
+			</li> 
+
+			<li style="list-style-type:none;"> 
+				<button class="linkClass" onclick= 
+					"displayContent(event, 'python')"> 
+					Business Application &<br>
+					Data Warehousing
+
+				</button> 
+			</li> 
+
+			<li style="list-style-type:none;"> 
+				<button class="linkClass" onclick= 
+					"displayContent(event, 'algorithms')"> 
+					Business Continuity Services
+				</button> 
+			</li> 
+
+			
+			<li style="list-style-type:none;"> 
+				<button class="linkClass" onclick= 
+					"displayContent(event, 'orecalapp')"> 
+					Oracle Application Support and<br> 
+					Maintenance
+
+				</button> 
+			</li> 
+
+			<li style="list-style-type:none;"> 
+				<button class="linkClass" onclick= 
+					"displayContent(event, 'utilities')"> 
+					Utilities Services
+				</button> 
+			</li> 
+
+			<li style="list-style-type:none;"> 
+				<button class="linkClass" onclick= 
+					"displayContent(event, 'globle')"> 
+					Global Infrastructure<br> 
+					Maintenance Services 
+
+				</button> 
+			</li>
+			
+
+			<li style="list-style-type:none;"> 
+				<button class="linkClass" onclick= 
+					"displayContent(event, 'tech')"> 
+					Specialized Technologies
+				</button> 
+			</li>
+ 
+		</ul> 
+	</div> 
+
+</div>
+
+
+
+
+<script>
+function displayContent(event, contentNameID) { 
+
+	let content = 
+		document.getElementsByClassName("contentClass"); 
+	let totalCount = content.length; 
+
+	// Loop through the content class 
+	// and hide the tabs first 
+	for (let count = 0; 
+		count < totalCount; count++) { 
+		content[count].style.display = "none"; 
+	} 
+
+	let links = 
+		document.getElementsByClassName("linkClass"); 
+	totalLinks = links.length; 
+
+	// Loop through the links and 
+	// remove the active class 
+	for (let count = 0; 
+		count < totalLinks; count++) { 
+		links[count].classList.remove("active"); 
+	} 
+
+	// Display the current tab 
+	document.getElementById(contentNameID) 
+		.style.display = "block"; 
+
+	// Add the active class to the current tab 
+	event.currentTarget.classList.add("active"); 
+} 
+
+</script>
+
+    
+</body>
+</html>
